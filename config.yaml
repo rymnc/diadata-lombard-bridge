@@ -18,17 +18,15 @@ contracts:
     interval: 
     # Contract which has more weight than the other (source of truth)
     sourceContract:
+      address: 
+      pathToArtifact: 
+      eventsToWatch:
+        - "test"
     # Destination Contract
     destinationContract:
-    # Path to abi
-    pathToSourceArtifact:
-    pathToDesArtifact:
-    # List of events to watch
-    # !![WARNING]!!: IF THE EVENTS DONT MATCH THE PROVIDED ABI's THEN IT WILL NOT WORK
-    eventsToWatch:
-      sourceContract:
-        - "test"
-      destinationContract:
+      address:
+      pathToArtifact:
+      eventsToWatch:
         - "test"
     # Limit of Ratio to be kept between contracts(percentage)
     healthRatio: 0.1
