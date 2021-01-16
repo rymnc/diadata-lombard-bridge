@@ -1,0 +1,20 @@
+{
+  "name": "diadata-lombard-bridge",
+  "version": "1.0.0",
+  "description": "Lombard Bridge ERC20",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests/*.test.js",
+    "lint": "prettier --write lib/*"
+  },
+  "author": "Aaryamann Challani <aaryamannchallani7@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "ethers": "^5.0.26",
+    "yaml": "^1.10.0"
+  }
+}
