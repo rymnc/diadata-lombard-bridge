@@ -1,11 +1,11 @@
 providers:
   sourceNetwork:
-    - url: "wss://eth-rinkeby.ws.alchemyapi.io/v2/fthygSuH9ArFJuBI2MZGikglM2ypNPx5"
+    - url: "wss://eth-mainnet.ws.alchemyapi.io/v2/oFT4VovUd2RoaXwFAjIPvD3i2aA2KQ6k"
       config:
         priority: 1
         stallTimeout: 200
         weight: 2
-      networkId: 4
+      networkId: 1
   targetNetwork:
     - url: "wss://data-seed-prebsc-1-s1.binance.org:8545"
       config:
@@ -28,10 +28,10 @@ contracts:
     interval: 300
     # Contract which has more weight than the other (source of truth)
     sourceContract:
-      address: "0xd5faa4aBd587E627Afb8CE972E080fb4a08eBDd1"
-      pathToArtifact: "artifacts/BridgeSource.json"
+      address: "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+      pathToArtifact: "artifacts/TetherToken.json"
       eventsToWatch:
-        - "DepositToken"
+        - "Transfer"
     # Destination Contract
     targetContract:
       address: "0x26d80fFc9c0cB79EB91B606DD6A05654C88e2Ec8"
