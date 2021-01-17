@@ -41,27 +41,20 @@ contracts:
     # Limit of Ratio to be kept between contracts(percentage)
     healthRatio: 0.90
   - name: "TEST2"
-    # Number of block confirmations before tx must be sent
     blockConfirmations:
-      # Source chain
       sourceChain: 6
-      # Destination chain
       targetChain: 6
-    # Time to wait before sending another tx. Essentially would move this into something dynamic
     interval: 300
-    # Contract which has more weight than the other (source of truth)
     sourceContract:
       address: "0xd5faa4aBd587E627Afb8CE972E080fb4a08eBDd1"
       pathToArtifact: "artifacts/BridgeSource.json"
       eventsToWatch:
         - "DepositToken"
-    # Destination Contract
     targetContract:
       address: "0x26d80fFc9c0cB79EB91B606DD6A05654C88e2Ec8"
       pathToArtifact: "artifacts/BridgeTarget.json"
       eventsToWatch:
         - "DepositToken"
-    # Limit of Ratio to be kept between contracts(percentage)
     healthRatio: 0.90
     
     
