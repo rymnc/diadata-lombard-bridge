@@ -14,7 +14,7 @@ providers:
         weight: 2
       networkId: 97
 
-  # ... continue with the list of providers. can be either http/ws
+  # ... continue with the list of providers. can be either http/ws BUT specify the correct network ID!
 
 contracts:
   - name: "TEST"
