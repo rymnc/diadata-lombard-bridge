@@ -1,6 +1,6 @@
 providers:
   sourceNetwork:
-    - url: "wss://eth-mainnet.ws.alchemyapi.io/v2/oFT4VovUd2RoaXwFAjIPvD3i2aA2KQ6k"
+    - url: "ws://35.192.108.223:8546"
       config:
         priority: 1
         stallTimeout: 200
