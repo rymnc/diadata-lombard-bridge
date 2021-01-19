@@ -10,6 +10,8 @@ This MVP ensures that 2 contracts on different chains maintain the same state.
 `docker build -t diadata-lombard-bridge:latest -f Dockerfile .` <br>
 `docker run -e 'privateKeys=xxxxxxxxxxx' diadata-lombard-bridge:latest`
 
+- Note: This package is being built for both monolithic/microservice architecture by being super modular with the data passing around. You can modify the functions that are called when an event occurs to send/receive it via kafka/zeromq/ any messaging service, as well as caching of pending transactions in a database.
+
 ---
 
 ## Playbooks
