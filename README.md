@@ -66,6 +66,6 @@ This MVP ensures that 2 contracts on different chains maintain the same state.
     # Limit of Ratio to be kept between contracts(percentage)
     healthRatio: 0.90
 ```
-
+---
 
 
