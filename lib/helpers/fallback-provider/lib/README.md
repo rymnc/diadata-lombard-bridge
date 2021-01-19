@@ -8,7 +8,7 @@
 
   ```yaml
   providers:
-    - url: "https://eth.framework.xyz"
+    - url: "https://"
       config:
         priority: 2
         stallTimeout: 200
