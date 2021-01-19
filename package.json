@@ -4,6 +4,7 @@
   "description": "Lombard Bridge ERC20",
   "main": "lib/index.js",
   "scripts": {
+    "start": "node lib/index.js",
     "test": "mocha tests/*.test.js",
     "lint": "prettier --write lib/*"
   },
