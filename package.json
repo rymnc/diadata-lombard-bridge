@@ -15,6 +15,7 @@
     "prettier": "^2.2.1"
   },
   "dependencies": {
+    "circular-json": "^0.5.9",
     "ethers": "^5.0.26",
     "yaml": "^1.10.0"
   }

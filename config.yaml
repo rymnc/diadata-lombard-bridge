@@ -26,6 +26,7 @@ contracts:
       targetChain: 6
     # Time to wait before sending another tx. Essentially would move this into something dynamic
     interval: 300
+    txLimit: 10
     # Contract which has more weight than the other (source of truth)
     sourceContract:
       address: "0xdAC17F958D2ee523a2206206994597C13D831ec7"
