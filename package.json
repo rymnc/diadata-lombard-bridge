@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "circular-json": "^0.5.9",
+    "dotenv": "^8.2.0",
     "ethers": "^5.0.26",
     "yaml": "^1.10.0"
   }
