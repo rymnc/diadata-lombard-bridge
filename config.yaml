@@ -1,11 +1,11 @@
 providers:
   sourceNetwork:
-    - url: "ws://35.192.108.223:8546"
+    - url: "wss://rinkeby.infura.io/ws/v3/c64ab21d647b491490edfb472386ba50"
       config:
         priority: 1
         stallTimeout: 200
         weight: 2
-      networkId: 1
+      networkId: 4
   sourceSignerEnv: "process.env.RINKEBY_SIGNER"
   targetNetwork:
     - url: "wss://data-seed-prebsc-1-s1.binance.org:8545"
@@ -31,13 +31,13 @@ contracts:
     txLimit: 10
     # Contract which has more weight than the other (source of truth)
     sourceContract:
-      address: "0xdAC17F958D2ee523a2206206994597C13D831ec7"
-      pathToArtifact: "artifacts/TetherToken.json"
+      address: "0x0c8f198D8D394B049f79BcA0A8FE530D884cE930"
+      pathToArtifact: "artifacts/Bridge.json"
       eventsToWatch:
-        - "Transfer"
+        - "DepositTokens"
     # Destination Contract
     targetContract:
-      address: "0x26d80fFc9c0cB79EB91B606DD6A05654C88e2Ec8"
+      address: "0x0E0d98dE69341DdE6f8F6054f6a64aca516998e2"
       pathToArtifact: "artifacts/Bridge.json"
       eventsToWatch:
         -
